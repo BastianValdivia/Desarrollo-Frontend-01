@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Nasalization';
+  src: url('../assets/fonts/Nasalization Rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Verdana, sans-serif;
+  background-color: #f4f1ff;
+  color: #2e2e4d;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #e8e4ff;
+  border-bottom: 4px solid #ff8fc7;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Nasalization', 'Trebuchet MS', sans-serif;
+  font-size: 3.1rem;
+  color: #6a5acd;
+  text-shadow: 2px 2px 0 #ff8fc7;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+header p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #5c5c7a;
+  font-size: 1rem;
+}
+
+/* ---------- Nav ---------- */
+#menu-principal {
+  background-color: #f0edff;
+  border-bottom: 2px solid #6a5acd;
+}
+
+#menu-principal ul {
+  list-style: none;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#menu-principal li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#menu-principal a {
+  color: #2e2e4d;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+#menu-principal a:hover {
+  border-color: #3d3d3d;
+  color: #b91c5d;
+}
+
+/* ---------- Main / productos ---------- */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+#productos h2 {
+  font-family: 'Nasalization', sans-serif;
+  text-align: center;
+  color: #6a5acd;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.lista-productos {
+  list-style: none;
+  text-align: center;
+}
+
+.producto {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  border: 2px solid #e3ddff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 12px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(106, 90, 205, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255, 143, 199, 0.35);
+  border-color: #ff8fc7;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid #e3ddff;
+  margin: 12px 0;
+}
+
+.producto h3 {
+  color: #2e2e4d;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.producto p {
+  color: #6e6e8f;
+  font-size: 0.9rem;
+}
+
+.etiqueta-consola {
+  display: inline-block;
+  background-color: #ff8fc7;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.producto:first-child {
+  border: 2px solid #ff8fc7;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #e8e4ff;
+  border-top: 4px solid #ff8fc7;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 20px;
+}
+
+footer h2 {
+  color: #6a5acd;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+footer p {
+  color: #5c5c7a;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.red-social {
+  color: #ff5fa2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.red-social:hover {
+  color: #6a5acd;
+  text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  #menu-principal li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .producto {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 12px auto;
+  }
+}
